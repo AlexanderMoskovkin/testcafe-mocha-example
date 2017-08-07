@@ -2,9 +2,9 @@ import { User } from '../src/types'
 
 describe('Mocha', () => {
   it('Mocha test', () => {
-    var a = false
+    const a = false
 
-    if (a) throw new Error('Never fails')
+    expect(a).toBe(false)
   })
   it(`should be a user like Jon Snow`, () => {
     const user: User = {
@@ -13,5 +13,6 @@ describe('Mocha', () => {
       name: 'Jon',
       hobbies: ['dying', 'arguing with khalesi', 'knowing nothing'],
     }
+    expect(user).toHaveProperty('email')
   })
 })
