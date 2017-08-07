@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tsc"
+    "test": "tsc",
+    "test:e2e": "testcafe chrome e2e",
+    "test:e2e:wsl": "testcafe path:chrome.exe e2e"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "@types/mocha": "^2.2.41",
-    "mocha": "^3.5.0",
-    "testcafe": "^0.17.0",
-    "typescript": "^2.4.2"
+    "@types/mocha": "2.2.41",
+    "mocha": "3.5.0",
+    "testcafe": "0.17.0",
+    "typescript": "2.4.2"
   }
 }
